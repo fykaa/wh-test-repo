@@ -1,9 +1,3 @@
-FROM golang:1.24    
+FROM alpine:latest
 
-WORKDIR /app
-
-COPY main.go ./
-
-RUN CGO_ENABLED=0 GOOS=linux go build -o /app
-EXPOSE 80
-CMD ["/app"]
+CMD ["echo", "2nd version, Hello Docker"]
