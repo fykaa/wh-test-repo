@@ -1,0 +1,25 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: ProjectConfig
+metadata:
+  name: kargo-demo
+  namespace: kargo-demo
+spec:
+  webhookReceivers: 
+    # - name: gh-wh-receiver
+    #   github:
+    #     secretRef:
+    #       name: gh-wh-secret
+    # - name: quay-wh-receiver
+    #   quay:
+    #     secretRef:
+    #       name: quay-wh-secret
+    #
+    # mutual exclusivity validation
+    # - name: gitlab-wh-receiver
+    #   gitlab:
+    #     secretRef:
+    #       name: gitlab-wh-secret
+    - name: gh-wh-receiver
+      github:
+        secretRef:
+          name: gh-wh-secret
