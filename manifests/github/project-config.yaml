@@ -1,8 +1,8 @@
 apiVersion: kargo.akuity.io/v1alpha1
 kind: ProjectConfig
 metadata:
-  name: kargo-demo
-  namespace: kargo-demo
+  name: gh-wh-demo
+  namespace: gh-wh-demo
 spec:
   webhookReceivers: 
     - name: gh-wh-receiver

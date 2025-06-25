@@ -2,7 +2,7 @@ apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
   name: my-dh-warehouse
-  namespace: kargo-demo
+  namespace: dh-wh-demo
 spec:
   # Set high interval for webhook-driven refreshes
   interval: 30m

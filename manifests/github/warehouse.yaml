@@ -2,7 +2,7 @@ apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
   name: my-gh-warehouse
-  namespace: kargo-demo
+  namespace: gh-wh-demo
 spec:
   # Intentionally setting a really high internal interval to avoid
   # conflating warehouse refreshes triggered by the webhooks
